@@ -1,0 +1,37 @@
+name: Deploy Carleads Default Service - Production
+
+on:
+  push:
+    branches:
+      - deploy_production
+  workflow_dispatch:
+
+env:
+  GCP_PROJECT_ID: carleads-486809
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy to App Engine
+        run: |
+          gcloud app deploy app.yaml \
+            --project=${{ env.GCP_PROJECT_ID }} \
+            --quiet \
+            --promote \
+            --stop-previous-version
+          
+          echo "✅ Default service deployment successful!"
+          echo "🌐 URL: https://${{ env.GCP_PROJECT_ID }}.ew.r.appspot.com"

@@ -1,12 +1,35 @@
-runtime: python312
+runtime: nodejs20
 
 service: default
 
-handlers:
-  - url: /
-    static_files: index.html
-    upload: index.html
+instance_class: F1
 
-  - url: /(.*)
-    static_files: \1
-    upload: (.*)
+automatic_scaling:
+  min_instances: 0
+  max_instances: 2
+
+entrypoint: npm start
+
+handlers:
+  # API endpoint handled by Node.js server
+  - url: /api/.*
+    script: auto
+    secure: always
+
+  # Serve static assets from dist/assets with caching
+  - url: /assets/(.*)
+    static_files: dist/assets/\1
+    upload: dist/assets/(.*)
+    secure: always
+    expiration: "30d"
+
+  # Serve other static files (favicon, etc.)
+  - url: /(.*\.(ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|css|js|map))
+    static_files: dist/\1
+    upload: dist/(.*\.(ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|css|js|map))
+    secure: always
+
+  # SPA fallback - all other routes serve index.html
+  - url: /.*
+    script: auto
+    secure: always

@@ -10,12 +10,24 @@ env:
   GCP_PROJECT_ID: carleads-486809
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
 
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
@@ -35,3 +47,4 @@ jobs:
           
           echo "✅ Default service deployment successful!"
           echo "🌐 URL: https://${{ env.GCP_PROJECT_ID }}.ew.r.appspot.com"
+          echo "🌐 Custom Domain: https://www.carleads.co.za"

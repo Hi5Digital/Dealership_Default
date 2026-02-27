@@ -14,16 +14,19 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
-// SMTP Configuration
+// SMTP Configuration from environment variables
 const transporter = nodemailer.createTransport({
-  host: 'smtp.carleads.co.za',
-  port: 465,
+  host: process.env.SMTP_HOST || 'smtp.carleads.co.za',
+  port: parseInt(process.env.SMTP_PORT || '465'),
   secure: true, // SSL/TLS
   auth: {
-    user: 'webmaster@carleads.co.za',
-    pass: 'LetsTryThis2!'
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS
   }
 });
+
+// Contact form recipient
+const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'shaun@hi5digital.co.za';
 
 // API endpoint for contact form
 app.post('/api/contact', async (req, res) => {
@@ -35,8 +38,8 @@ app.post('/api/contact', async (req, res) => {
   }
 
   const mailOptions = {
-    from: '"CarLeads Website" <webmaster@carleads.co.za>',
-    to: 'shaun@hi5digital.co.za',
+    from: `"CarLeads Website" <${process.env.SMTP_USER}>`,
+    to: CONTACT_EMAIL,
     subject: `New Demo Request from ${name}`,
     html: `
       <h2>New Demo Request</h2>

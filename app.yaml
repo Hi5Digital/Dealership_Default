@@ -10,6 +10,11 @@ automatic_scaling:
 
 entrypoint: npm start
 
+env_variables:
+  SMTP_HOST: "smtp.carleads.co.za"
+  SMTP_PORT: "465"
+  CONTACT_EMAIL: "shaun@hi5digital.co.za"
+
 handlers:
   # API endpoint handled by Node.js server
   - url: /api/.*

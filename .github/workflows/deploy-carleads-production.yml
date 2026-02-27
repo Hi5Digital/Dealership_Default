@@ -37,6 +37,13 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
 
+      - name: Inject SMTP secrets into app.yaml
+        run: |
+          cat >> app.yaml << EOF
+            SMTP_USER: "${{ secrets.SMTP_USER }}"
+            SMTP_PASS: "${{ secrets.SMTP_PASS }}"
+          EOF
+
       - name: Deploy to App Engine
         run: |
           gcloud app deploy app.yaml \

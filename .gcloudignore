@@ -1,11 +1,8 @@
 # This file specifies files that are ignored when deploying to App Engine
-# Note: dist/ is NOT ignored here because it contains the built frontend
+# Note: dist/ and src/ are NOT ignored - GCP needs src/ to build, dist/ for serving
 
 # Dependencies (rebuilt on App Engine)
 node_modules/
-
-# Source files (not needed in production)
-src/
 
 # Development files
 *.md

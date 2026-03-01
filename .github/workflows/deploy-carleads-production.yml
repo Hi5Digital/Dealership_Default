@@ -39,10 +39,9 @@ jobs:
 
       - name: Inject SMTP secrets into app.yaml
         run: |
-          cat >> app.yaml << EOF
-            SMTP_USER: "${{ secrets.SMTP_USER }}"
-            SMTP_PASS: "${{ secrets.SMTP_PASS }}"
-          EOF
+          sed -i 's/CONTACT_EMAIL: "shaun@hi5digital.co.za"/CONTACT_EMAIL: "shaun@hi5digital.co.za"\n  SMTP_USER: "${{ secrets.SMTP_USER }}"\n  SMTP_PASS: "${{ secrets.SMTP_PASS }}"/' app.yaml
+          echo "Updated app.yaml:"
+          cat app.yaml
 
       - name: Deploy to App Engine
         run: |

@@ -15,26 +15,8 @@ env_variables:
   SMTP_PORT: "465"
   CONTACT_EMAIL: "shaun@hi5digital.co.za"
 
+# All requests handled by Node.js server (which serves static files from dist/)
 handlers:
-  # API endpoint handled by Node.js server
-  - url: /api/.*
-    script: auto
-    secure: always
-
-  # Serve static assets from dist/assets with caching
-  - url: /assets/(.*)
-    static_files: dist/assets/\1
-    upload: dist/assets/(.*)
-    secure: always
-    expiration: "30d"
-
-  # Serve other static files (favicon, etc.)
-  - url: /(.*\.(ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|css|js|map))
-    static_files: dist/\1
-    upload: dist/(.*\.(ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|css|js|map))
-    secure: always
-
-  # SPA fallback - all other routes serve index.html
   - url: /.*
     script: auto
     secure: always

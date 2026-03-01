@@ -27,11 +27,11 @@ coverage/
 # TypeScript source maps (optional, can remove if you want them)
 # *.map
 
-# Build tools config
-vite.config.ts
-tsconfig*.json
-postcss.config.js
-tailwind.config.ts
+# Build tools config - NOT ignored, needed for GCP build
+# vite.config.ts - NEEDED
+# tsconfig*.json - NEEDED
+# postcss.config.js - NEEDED
+# tailwind.config.ts - NEEDED
 eslint.config.js
 components.json
 

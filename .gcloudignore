@@ -41,6 +41,7 @@ components.json
 # Public folder (contents are copied to dist during build)
 public/
 
-# Screenshots from testing
+# Screenshots from testing (but keep assets)
 *.png
 !dist/**/*.png
+!src/assets/**/*.png

@@ -1,0 +1,49 @@
+# This file specifies files that are ignored when deploying to App Engine
+# Note: dist/ is NOT ignored here because it contains the built frontend
+
+# Dependencies (rebuilt on App Engine)
+node_modules/
+
+# Source files (not needed in production)
+src/
+
+# Development files
+*.md
+*.log
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Environment files (secrets are injected via workflow)
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# TypeScript source maps (optional, can remove if you want them)
+# *.map
+
+# Build tools config
+vite.config.ts
+tsconfig*.json
+postcss.config.js
+tailwind.config.ts
+eslint.config.js
+components.json
+
+# GitHub workflows
+.github/
+
+# Public folder (contents are copied to dist during build)
+public/
+
+# Screenshots from testing
+*.png
+!dist/**/*.png

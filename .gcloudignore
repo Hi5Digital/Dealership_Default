@@ -38,8 +38,8 @@ components.json
 # GitHub workflows
 .github/
 
-# Public folder (contents are copied to dist during build)
-public/
+# Public folder is needed for GCP build (Vite copies it to dist/)
+# public/ - DO NOT IGNORE
 
 # Screenshots from testing (but keep assets)
 *.png

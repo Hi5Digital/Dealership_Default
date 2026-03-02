@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carleads.co.za/sitemap.xml

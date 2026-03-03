@@ -119,7 +119,7 @@ const WhatsAppMessaging = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Set up smart rules to automate lead routing, text & email follow-ups, and test-drive assignments. Car Leads provides WhatsApp, SMS and email communication built for dealership workflows.
+              Set up smart rules to automate <Link to="/features/lead-management-crm" className="text-primary hover:underline">lead routing</Link>, text & email follow-ups, and test-drive assignments. Car Leads provides WhatsApp, SMS and email communication built for dealership workflows.
             </p>
             
             <ul className="space-y-3">
@@ -213,7 +213,7 @@ const WhatsAppMessaging = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Take back control of your dealership's communications. Ensure every lead is treated with the same high standard of service.
+              Take back control of your dealership's communications with complete visibility into every customer interaction. Ensure every lead is treated with the same high standard of service, and use <Link to="/features/dealership-sales-analytics-south-africa" className="text-primary hover:underline">sales analytics</Link> to track response times and conversion rates.
             </p>
             
             <ul className="space-y-3">

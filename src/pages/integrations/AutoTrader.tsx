@@ -144,11 +144,11 @@ const AutoTrader = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>WhatsApp Integration:</strong> Trigger an automated, personalized WhatsApp message to the buyer the moment their AutoTrader inquiry hits your system.</span>
+                <span><strong>WhatsApp Integration:</strong> Trigger an automated, personalized <Link to="/features/whatsapp-messaging-for-dealerships" className="text-primary hover:underline">WhatsApp message</Link> to the buyer the moment their AutoTrader inquiry hits your system.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Measure the ROI:</strong> Use our advanced reporting to see exactly how many AutoTrader leads turned into test drives, finance applications, and gross profit.</span>
+                <span><strong>Measure the ROI:</strong> Use our <Link to="/features/dealership-sales-analytics-south-africa" className="text-primary hover:underline">advanced reporting</Link> to see exactly how many AutoTrader leads turned into test drives, finance applications, and gross profit.</span>
               </li>
             </ul>
           </div>

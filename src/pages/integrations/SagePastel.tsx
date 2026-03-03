@@ -125,7 +125,7 @@ const SagePastel = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Bridge the gap between your sales team and your finance department. With our dedicated Sage Pastel accounting integration, closed deals flow seamlessly into your financial records.
+              Bridge the gap between your sales team and your finance department. With our dedicated Sage Pastel accounting integration, closed deals from your <Link to="/features/lead-management-crm" className="text-primary hover:underline">CRM system</Link> flow seamlessly into your financial records.
             </p>
             
             <ul className="space-y-3">
@@ -139,7 +139,7 @@ const SagePastel = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Faster Invoicing:</strong> Generate and manage invoices faster by having all the necessary CRM data readily available in your accounting software.</span>
+                <span><strong>Faster Invoicing:</strong> Generate and manage invoices faster by having all the necessary <Link to="/features/lead-management-crm" className="text-primary hover:underline">CRM data</Link> readily available in your accounting software.</span>
               </li>
             </ul>
           </div>
@@ -170,7 +170,7 @@ const SagePastel = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Track Deal Costs:</strong> Better visibility into reconditioning costs, trade-in values, and overall deal profitability.</span>
+                <span><strong>Track Deal Costs:</strong> Better visibility into reconditioning costs, trade-in values, and overall deal profitability with <Link to="/features/dealership-sales-analytics-south-africa" className="text-primary hover:underline">detailed analytics</Link>.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />

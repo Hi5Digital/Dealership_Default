@@ -160,7 +160,7 @@ const DealTracking = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Access live reports and custom dashboards that reveal trends in customer behaviour and dealership performance, empowering you to make data-driven decisions quickly.
+              Access live reports and custom dashboards with <Link to="/features/dealership-sales-analytics-south-africa" className="text-primary hover:underline">advanced analytics</Link> that reveal trends in customer behaviour and dealership performance, empowering you to make data-driven decisions quickly.
             </p>
             
             <ul className="space-y-3">

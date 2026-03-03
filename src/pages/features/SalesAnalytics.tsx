@@ -113,7 +113,7 @@ const SalesAnalytics = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Lead conversion tracking:</strong> Track how many leads from each source actually turn into test drives and closed deals.</span>
+                <span><strong>Lead conversion tracking:</strong> Track how many <Link to="/features/lead-management-crm" className="text-primary hover:underline">CRM leads</Link> from each source actually turn into test drives and closed deals.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -152,7 +152,7 @@ const SalesAnalytics = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Role-based insights:</strong> Ensure that branch managers see exactly what their specific team is doing, while dealership principals get the high-level, multi-branch view.</span>
+                <span><strong>Role-based insights:</strong> Ensure that branch managers see exactly what their specific team is doing, while dealership principals get the high-level, <Link to="/features/multi-branch-dealership-management" className="text-primary hover:underline">multi-branch view</Link>.</span>
               </li>
             </ul>
           </div>

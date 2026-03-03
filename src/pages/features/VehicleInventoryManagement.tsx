@@ -160,7 +160,7 @@ const VehicleInventoryManagement = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Whether you have two branches or twenty across South Africa, Car Leads gives you a unified view of every asset you own. Empower your team to sell from any floor.
+              Whether you have two branches or twenty across South Africa, Car Leads gives you a unified view of every asset you own. Empower your team to sell from any floor with our <Link to="/features/multi-branch-dealership-management" className="text-primary hover:underline">multi-branch management system</Link>.
             </p>
             
             <ul className="space-y-3">

@@ -103,7 +103,7 @@ const MultiBranchManagement = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Never lose a sale because the right car was parked on the wrong floor. Empower your entire sales force to sell from your group's collective inventory.
+              Whether you have two branches or twenty across South Africa, Car Leads gives you a unified view of every asset you own. Empower your team to sell from any floor with our <Link to="/features/lead-management-crm" className="text-primary hover:underline">unified CRM system</Link>.
             </p>
             
             <ul className="space-y-3">
@@ -148,11 +148,11 @@ const MultiBranchManagement = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Standardized processes:</strong> Enforce the same high-quality lead follow-up and CRM procedures across every single branch.</span>
+                <span><strong>Standardized processes:</strong> Enforce the same high-quality lead follow-up and <Link to="/features/lead-management-crm" className="text-primary hover:underline">CRM procedures</Link> across every single branch.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Compare branch performance:</strong> Easily benchmark locations against one another to see who is driving the highest ROI and lead conversion.</span>
+                <span><strong>Compare branch performance:</strong> Easily benchmark locations against one another with <Link to="/features/dealership-sales-analytics-south-africa" className="text-primary hover:underline">sales analytics</Link> to see who is driving the highest ROI and lead conversion.</span>
               </li>
             </ul>
           </div>

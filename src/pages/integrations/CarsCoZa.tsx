@@ -117,6 +117,10 @@ const CarsCoZa = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span><strong>Automated WhatsApp follow-ups:</strong> Send an instant, personalized message to each new Cars.co.za lead while they're still actively shopping with <Link to="/features/whatsapp-messaging-for-dealerships" className="text-primary hover:underline">WhatsApp messaging</Link>.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span><strong>Immediate notification:</strong> Alert your sales team the second a new Cars.co.za lead drops into the system.</span>
               </li>
             </ul>
@@ -138,7 +142,7 @@ const CarsCoZa = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Speed to lead is critical. Car Leads doesn't just capture the inquiry; it actively works the lead to get you to the sale faster.
+              Speed to lead is critical. Car Leads doesn't just capture the inquiry; it actively works the lead with <Link to="/features/lead-management-crm" className="text-primary hover:underline">automated lead routing</Link> to get you to the sale faster.
             </p>
             
             <ul className="space-y-3">

@@ -49,7 +49,7 @@ const LeadManagementCRM = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              In a busy South African motor dealership, speed is everything. Relying on manual data entry or constantly logging into different platforms means opportunities slip through the cracks. Car Leads solves the chaos by eliminating:
+              In a busy South African motor dealership, speed is everything. Relying on manual data entry or constantly logging into different platforms means opportunities slip through the cracks. Car Leads solves the chaos by eliminating these common problems:
             </p>
             
             <ul className="space-y-3">
@@ -110,7 +110,7 @@ const LeadManagementCRM = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Capture every lead source</strong> into a central lead board.</span>
+                <span><strong>Capture every lead source</strong> from <Link to="/integrations/cars-co-za" className="text-primary hover:underline">Cars.co.za</Link>, <Link to="/integrations/autotrader" className="text-primary hover:underline">AutoTrader</Link>, and more into a central lead board.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -200,7 +200,7 @@ const LeadManagementCRM = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>Personalised customer communication</strong> based on their specific vehicle interests.</span>
+                <span><strong>Personalised customer communication</strong> via <Link to="/features/whatsapp-messaging-for-dealerships" className="text-primary hover:underline">WhatsApp messaging</Link> based on their specific vehicle interests.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />

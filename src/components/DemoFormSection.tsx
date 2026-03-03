@@ -81,14 +81,14 @@ const DemoFormSection = () => {
           </div>
 
           {/* Right — Form */}
-          <div className="bg-card rounded-2xl border border-border shadow-xl p-8">
+          <div className="bg-card rounded-lg border border-border shadow-lg p-8">
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
                 placeholder="Full Name"
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="rounded-xl h-12"
+                className="rounded-lg h-12"
               />
               <Input
                 type="email"
@@ -96,17 +96,17 @@ const DemoFormSection = () => {
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="rounded-xl h-12"
+                className="rounded-lg h-12"
               />
               <div className="flex gap-2">
-                <div className="bg-muted rounded-xl h-12 px-3 flex items-center text-sm text-muted-foreground font-medium shrink-0">+27</div>
+                <div className="bg-muted rounded-lg h-12 px-3 flex items-center text-sm text-muted-foreground font-medium shrink-0">+27</div>
                 <Input
                   type="tel"
                   placeholder="Phone Number"
                   required
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                  className="rounded-xl h-12"
+                  className="rounded-lg h-12"
                 />
               </div>
               <Input
@@ -114,9 +114,9 @@ const DemoFormSection = () => {
                 required
                 value={form.dealership}
                 onChange={(e) => setForm({ ...form, dealership: e.target.value })}
-                className="rounded-xl h-12"
+                className="rounded-lg h-12"
               />
-              <Button type="submit" size="lg" className="w-full rounded-xl h-12 text-base font-bold tracking-wide" disabled={isSubmitting}>
+              <Button type="submit" size="lg" className="w-full rounded-lg h-12 text-base font-bold tracking-wide" disabled={isSubmitting}>
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />

@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Xero = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: sync, isVisible: syncVisible } = useScrollReveal();
   const { ref: alignment, isVisible: alignmentVisible } = useScrollReveal();
@@ -26,39 +26,13 @@ const Xero = () => {
       title="Dealership Xero Accounting Integration | Car Leads"
       description="Stop double-capturing sales data. Car Leads offers seamless Xero accounting integration to reduce manual recon and errors for South African dealerships."
     >
-      {/* Hero Section */}
-      <section id="integration-hero-accounting" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Streamline Dealership Finances with Xero Integration
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Stop manually recapturing deal information. Car Leads offers Xero accounting integration to reduce manual recon and errors. Connect your dealership's sales pipeline directly to your financial back-office.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <img
-                src="/xero-sage-pastel-dealership-integration.png"
-                alt="Xero and Sage Pastel accounting integration with dealership CRM showing automated financial sync workflow"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/xero-sage-pastel-dealership-integration.webp"
+        imageAlt="Xero and Sage Pastel accounting integration with dealership CRM showing automated financial sync workflow"
+        title="Streamline Dealership Finances with Xero Integration"
+        description="Stop manually recapturing deal information. Car Leads offers Xero accounting integration to reduce manual recon and errors. Connect your dealership's sales pipeline directly to your financial back-office."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Integration Challenges */}
       <ContentSection className="bg-muted/30">
@@ -95,7 +69,7 @@ const Xero = () => {
 
           <div className="problem-image-wrapper">
             <img
-              src="/dealership-manual-recon-headache.png"
+              src="/dealership-manual-recon-headache.webp"
               alt="Stressed F&I manager dealing with manual reconciliation and double data entry between CRM and accounting system"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -113,7 +87,7 @@ const Xero = () => {
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
             <img
-              src="/car-leads-xero-sync-success.png"
+              src="/car-leads-xero-sync-success.webp"
               alt="Successful Xero sync confirmation showing automated deal-to-invoice workflow in dealership CRM"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -181,7 +155,7 @@ const Xero = () => {
 
           <div className="feature-image-wrapper">
             <img
-              src="/dealership-gross-profit-accounting-match.png"
+              src="/dealership-gross-profit-accounting-match.webp"
               alt="Split screen report comparing dealership sales gross profit with accounting system financial records showing perfect alignment"
               className="w-full h-auto rounded-lg shadow-lg"
             />

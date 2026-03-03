@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const MultiBranchManagement = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: stock, isVisible: stockVisible } = useScrollReveal();
   const { ref: roleBased, isVisible: roleBasedVisible } = useScrollReveal();
@@ -26,41 +26,13 @@ const MultiBranchManagement = () => {
       title="Multi-Branch Dealership Management Software South Africa | Car Leads"
       description="Unify your dealership group. Car Leads provides multi-showroom stock management, role-based access, and centralized reporting for multi-branch motor dealerships in South Africa."
     >
-      {/* Hero Section */}
-      <section id="multi-branch-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Unify Your Dealership Group with Multi-Branch Management
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Managing multiple locations shouldn't mean managing multiple headaches. Car Leads provides seamless multi-branch and multi-showroom support, giving dealer principals a single, powerful platform to oversee every location, salesperson, and vehicle.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <img 
-                  src="/multi-branch-dealership-management-dashboard.png" 
-                  alt="Multi-branch dealership management dashboard showing group-wide visibility and control"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/multi-branch-dealership-management-dashboard.webp"
+        imageAlt="Multi-branch dealership management dashboard showing group-wide visibility and control"
+        title="Unify Your Dealership Group with Multi-Branch Management"
+        description="Managing multiple locations shouldn't mean managing multiple headaches. Car Leads provides seamless multi-branch and multi-showroom support, giving dealer principals a single, powerful platform to oversee every location, salesperson, and vehicle."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Multi-Branch Challenges */}
       <ContentSection className="bg-muted/30">
@@ -98,7 +70,7 @@ const MultiBranchManagement = () => {
           <div className="problem-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/dealership-group-silos-vs-unified.png" 
+                src="/dealership-group-silos-vs-unified.webp" 
                 alt="Dealership group silos versus unified system concept showing disconnected operations"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -118,7 +90,7 @@ const MultiBranchManagement = () => {
           <div className="feature-image-wrapper order-2 lg:order-1">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/multi-showroom-stock-visibility.png" 
+                src="/multi-showroom-stock-visibility.webp" 
                 alt="Multi-showroom stock visibility filter UI showing vehicle inventory across all locations"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -188,7 +160,7 @@ const MultiBranchManagement = () => {
           <div className="feature-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/dealership-role-based-access-control.png" 
+                src="/dealership-role-based-access-control.webp" 
                 alt="Role-based access control permissions UI for dealership group management"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

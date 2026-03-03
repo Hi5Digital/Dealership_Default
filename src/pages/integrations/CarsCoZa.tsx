@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CarsCoZa = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: capture, isVisible: captureVisible } = useScrollReveal();
   const { ref: automation, isVisible: automationVisible } = useScrollReveal();
@@ -26,41 +26,13 @@ const CarsCoZa = () => {
       title="Cars.co.za Lead Management CRM for Dealerships | Car Leads"
       description="Stop manually copying leads. Car Leads provides seamless Cars.co.za lead management for dealerships, automatically pulling inquiries directly into your central CRM lead board."
     >
-      {/* Hero Section */}
-      <section id="integration-hero-carscoza" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Cars.co.za Lead Management for South African Dealerships
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Stop manually checking portals and copying data. Car Leads offers seamless lead capture from Cars.co.za, pulling your incoming vehicle inquiries instantly into one centralized dealership CRM.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <img 
-                  src="/cars-co-za-crm-integration.png" 
-                  alt="Cars.co.za CRM integration flow showing automated lead capture for dealerships"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/cars-co-za-crm-integration.webp"
+        imageAlt="Cars.co.za CRM integration flow showing automated lead capture for dealerships"
+        title="Cars.co.za Lead Management for South African Dealerships"
+        description="Stop manually checking portals and copying data. Car Leads offers seamless lead capture from Cars.co.za, pulling your incoming vehicle inquiries instantly into one centralized dealership CRM."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Integration Challenges */}
       <ContentSection className="bg-muted/30">
@@ -98,7 +70,7 @@ const CarsCoZa = () => {
           <div className="problem-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/manual-lead-entry-delays.png" 
+                src="/manual-lead-entry-delays.webp" 
                 alt="Manual lead entry delays causing slow response times and lost sales opportunities"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -118,7 +90,7 @@ const CarsCoZa = () => {
           <div className="feature-image-wrapper order-2 lg:order-1">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/cars-co-za-lead-board-capture.png" 
+                src="/cars-co-za-lead-board-capture.webp" 
                 alt="Cars.co.za lead board showing instant lead capture into dealership CRM"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -188,7 +160,7 @@ const CarsCoZa = () => {
           <div className="feature-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/automated-dealership-lead-routing.png" 
+                src="/automated-dealership-lead-routing.webp" 
                 alt="Automated dealership lead routing workflow diagram showing smart assignment rules"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

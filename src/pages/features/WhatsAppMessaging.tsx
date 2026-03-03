@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const WhatsAppMessaging = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: automation, isVisible: automationVisible } = useScrollReveal();
   const { ref: examples, isVisible: examplesVisible } = useScrollReveal();
@@ -42,41 +42,13 @@ const WhatsAppMessaging = () => {
       title="Dealership WhatsApp & SMS Messaging Integration | Car Leads"
       description="Enhance customer communication and reduce no-shows. Car Leads offers automated WhatsApp notifications, SMS, and email follow-ups built for South African dealership workflows."
     >
-      {/* Hero Section */}
-      <section id="messaging-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Enhance Customer Communication with Multi-Channel Messaging
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Keep your customers engaged with automated SMS and email notifications for appointments and status follow-ups. Use multiple channels to ensure your messages always hit home.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <img 
-                  src="/dealership-whatsapp-messaging-mobile.png" 
-                  alt="WhatsApp messaging on mobile for dealership customer communication"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/dealership-whatsapp-messaging-mobile.webp"
+        imageAlt="WhatsApp messaging on mobile for dealership customer communication"
+        title="Enhance Customer Communication with Multi-Channel Messaging"
+        description="Keep your customers engaged with automated SMS and email notifications for appointments and status follow-ups. Use multiple channels to ensure your messages always hit home."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Communication Challenges */}
       <ContentSection className="bg-muted/30">
@@ -114,7 +86,7 @@ const WhatsAppMessaging = () => {
           <div className="problem-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/missed-dealership-appointments.png" 
+                src="/missed-dealership-appointments.webp" 
                 alt="Frustrated dealership manager dealing with missed appointments and lost sales"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -134,7 +106,7 @@ const WhatsAppMessaging = () => {
           <div className="feature-image-wrapper order-2 lg:order-1">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/automate-whatsapp-notifications.png" 
+                src="/automate-whatsapp-notifications.webp" 
                 alt="Automated WhatsApp notification settings panel for dealership communication"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -207,7 +179,7 @@ const WhatsAppMessaging = () => {
             <div className="feature-image-wrapper">
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
                 <img 
-                  src="/dealership-sms-whatsapp-example.png" 
+                  src="/dealership-sms-whatsapp-example.webp" 
                   alt="WhatsApp and SMS message examples for dealership customer engagement"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
@@ -228,7 +200,7 @@ const WhatsAppMessaging = () => {
           <div className="feature-image-wrapper order-2 lg:order-1">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/track-staff-customer-interactions.png" 
+                src="/track-staff-customer-interactions.webp" 
                 alt="CRM timeline tracking staff and customer interactions for dealership visibility"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

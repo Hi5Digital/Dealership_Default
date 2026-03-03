@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const LeadManagementCRM = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: problem, isVisible: problemVisible } = useScrollReveal();
   const { ref: unified, isVisible: unifiedVisible } = useScrollReveal();
   const { ref: automation, isVisible: automationVisible } = useScrollReveal();
@@ -27,41 +27,13 @@ const LeadManagementCRM = () => {
       title="Dealership Lead Management & CRM Software | Car Leads"
       description="Stop losing leads. Car Leads provides South African motor dealerships with a unified CRM to capture, route, and follow up on inquiries from AutoTrader, Cars.co.za, and more."
     >
-      {/* Hero Section */}
-      <section id="crm-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Capture, Manage, and Close More Deals with a Unified Dealership CRM
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Everything your dealership needs to capture, manage, and close more deals — in one place. Turn prospects into sales with a central lead board that connects your showroom floor to your online channels.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <img 
-                  src="/platform-hero-mockup.png" 
-                  alt="Car Leads CRM Dashboard - Unified lead management system for South African dealerships"
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/platform-hero-mockup.webp"
+        imageAlt="Car Leads CRM Dashboard - Unified lead management system for South African dealerships"
+        title="Capture, Manage, and Close More Deals with a Unified Dealership CRM"
+        description="Everything your dealership needs to capture, manage, and close more deals — in one place. Turn prospects into sales with a central lead board that connects your showroom floor to your online channels."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Lost Leads Problem */}
       <ContentSection className="bg-muted/30">
@@ -99,7 +71,7 @@ const LeadManagementCRM = () => {
           <div className="problem-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/dealership-pain-points.png" 
+                src="/dealership-pain-points.webp" 
                 alt="Dealership manager frustrated with scattered leads and manual processes"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -119,7 +91,7 @@ const LeadManagementCRM = () => {
           <div className="feature-image-wrapper order-2 lg:order-1">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/unified-dealership-crm-flow.png" 
+                src="/unified-dealership-crm-flow.webp" 
                 alt="Unified CRM workflow showing lead capture from multiple sources into central dashboard"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -189,7 +161,7 @@ const LeadManagementCRM = () => {
           <div className="feature-image-wrapper">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
               <img 
-                src="/south-african-dealership-integrations.png" 
+                src="/south-african-dealership-integrations.webp" 
                 alt="South African dealership integrations - AutoTrader, Cars.co.za, Xero, and more"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -209,7 +181,7 @@ const LeadManagementCRM = () => {
           <div className="feature-image-wrapper order-2 lg:order-1">
             <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border shadow-lg">
               <img 
-                src="/dealership-crm-lead-board.png" 
+                src="/dealership-crm-lead-board.webp" 
                 alt="Dealership CRM lead board showing automated communication and follow-up tracking"
                 className="w-full h-auto rounded-lg"
               />

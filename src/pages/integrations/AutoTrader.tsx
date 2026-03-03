@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const AutoTrader = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: capture, isVisible: captureVisible } = useScrollReveal();
   const { ref: automation, isVisible: automationVisible } = useScrollReveal();
@@ -26,39 +26,13 @@ const AutoTrader = () => {
       title="AutoTrader Lead Tracking CRM South Africa | Car Leads"
       description="Stop logging into multiple portals. Car Leads offers direct AutoTrader lead capture for South African dealerships, pulling inquiries instantly into a central CRM lead board."
     >
-      {/* Hero Section */}
-      <section id="integration-hero-autotrader" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                AutoTrader Lead Tracking CRM for South African Dealerships
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Maximize the return on your AutoTrader listings. Car Leads seamlessly connects your AutoTrader dealer account to our platform, ensuring you can pull lead capture from AutoTrader directly into your lead board.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <img
-                src="/autotrader-crm-integration-south-africa.png"
-                alt="AutoTrader CRM integration flow diagram showing automated lead capture from AutoTrader listings into dealership CRM system"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/autotrader-crm-integration-south-africa.webp"
+        imageAlt="AutoTrader CRM integration flow diagram showing automated lead capture from AutoTrader listings into dealership CRM system"
+        title="AutoTrader Lead Tracking CRM for South African Dealerships"
+        description="Maximize the return on your AutoTrader listings. Car Leads seamlessly connects your AutoTrader dealer account to our platform, ensuring you can pull lead capture from AutoTrader directly into your lead board."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Integration Challenges */}
       <ContentSection className="bg-muted/30">
@@ -95,7 +69,7 @@ const AutoTrader = () => {
 
           <div className="problem-image-wrapper">
             <img
-              src="/delayed-dealership-lead-response.png"
+              src="/delayed-dealership-lead-response.webp"
               alt="Frustrated customer waiting for delayed response from dealership after submitting AutoTrader enquiry"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -113,7 +87,7 @@ const AutoTrader = () => {
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
             <img
-              src="/autotrader-leads-on-dealership-board.png"
+              src="/autotrader-leads-on-dealership-board.webp"
               alt="CRM lead board showing AutoTrader leads with customer details and vehicle interest captured automatically"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -181,7 +155,7 @@ const AutoTrader = () => {
 
           <div className="feature-image-wrapper">
             <img
-              src="/autotrader-lead-conversion-roi-report.png"
+              src="/autotrader-lead-conversion-roi-report.webp"
               alt="Analytics dashboard showing AutoTrader lead conversion rates, test drive bookings, and ROI metrics for dealership"
               className="w-full h-auto rounded-lg shadow-lg"
             />

@@ -23,6 +23,7 @@ const Pricing = () => {
   const pricingTiers = [
     {
       name: "Bronze",
+      icon: "/pricing-bronze-icon.webp",
       price: "R4,500",
       period: "per month",
       audience: "Perfect for single-branch dealerships focusing on core lead management.",
@@ -41,6 +42,7 @@ const Pricing = () => {
     },
     {
       name: "Silver",
+      icon: "/pricing-silver-icon.webp",
       price: "R8,500",
       period: "per month",
       audience: "Ideal for growing multi-branch dealers needing financial integrations and digital contracts.",
@@ -62,6 +64,7 @@ const Pricing = () => {
     },
     {
       name: "Gold",
+      icon: "/pricing-gold-icon.webp",
       price: "R12,500",
       period: "per month",
       audience: "The ultimate enterprise solution for large franchise networks requiring maximum security and automation.",
@@ -143,8 +146,12 @@ const Pricing = () => {
                   </div>
                 )}
                 
-                <div className={`w-16 h-16 rounded-lg bg-gradient-to-br ${tier.color} flex items-center justify-center mb-4`}>
-                  <span className="text-2xl font-bold">{tier.name[0]}</span>
+                <div className="w-24 h-24 mb-4">
+                  <img
+                    src={tier.icon}
+                    alt={`${tier.name} tier icon`}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 
                 <h2 className="text-2xl font-bold mb-2">{tier.name}</h2>

@@ -47,9 +47,11 @@ const StopLosingLeads = () => {
               By the Car Leads Dealership Success Team
             </p>
             
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center mt-8">
-              <span className="text-muted-foreground text-center px-4">Featured Blog Image</span>
-            </div>
+            <img
+              src="/blog-hero-stop-losing-portal-leads.webp"
+              alt="Dealership struggling with manual lead management from AutoTrader and Cars.co.za"
+              className="w-full aspect-video object-cover rounded-xl mt-8"
+            />
           </div>
         </div>
       </header>
@@ -89,9 +91,11 @@ const StopLosingLeads = () => {
               </li>
             </ul>
 
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center my-12">
-              <span className="text-muted-foreground text-center px-4">Slow Response Times Kill Sales</span>
-            </div>
+            <img
+              src="/blog-inline-slow-lead-response.webp"
+              alt="Visual showing slow dealership response times leading to lost sales opportunities"
+              className="w-full aspect-video object-cover rounded-xl my-12"
+            />
 
             <h2 className="text-3xl font-bold mt-12 mb-6">How to Stop the Leak and Close More Deals</h2>
             

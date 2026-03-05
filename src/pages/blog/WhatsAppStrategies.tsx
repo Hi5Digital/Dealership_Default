@@ -46,9 +46,11 @@ const WhatsAppStrategies = () => {
               By the Car Leads Dealership Success Team
             </p>
             
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center mt-8">
-              <span className="text-muted-foreground text-center px-4">WhatsApp Strategies Hero Image</span>
-            </div>
+            <img
+              src="/blog-hero-dealership-whatsapp-strategies.webp"
+              alt="Dealership using automated WhatsApp messaging to engage customers and reduce no-shows"
+              className="w-full aspect-video object-cover rounded-xl mt-8"
+            />
           </div>
         </div>
       </header>

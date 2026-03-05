@@ -51,11 +51,11 @@ const MultiBranchGroups = () => {
             </div>
             
             <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Multi-Branch Group Dashboard</span>
-                </div>
-              </div>
+              <img
+                src="/multi-branch-dealership-group-dashboard.webp"
+                alt="Multi-branch dealership group dashboard showing centralized operations and analytics across locations"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -95,11 +95,11 @@ const MultiBranchGroups = () => {
           </div>
 
           <div className="problem-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Disconnected vs Unified</span>
-              </div>
-            </div>
+            <img
+              src="/disconnected-dealership-branches-vs-unified.webp"
+              alt="Comparison showing disconnected dealership branches versus unified network operations"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -113,11 +113,11 @@ const MultiBranchGroups = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Multi-Showroom Stock</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-group-multi-showroom-stock.webp"
+              alt="Multi-showroom stock management dashboard with cross-branch vehicle inventory visibility"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">
@@ -181,11 +181,11 @@ const MultiBranchGroups = () => {
           </div>
 
           <div className="feature-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Multi-Branch Lead Routing</span>
-              </div>
-            </div>
+            <img
+              src="/multi-branch-dealership-lead-routing.webp"
+              alt="Multi-branch dealership lead routing workflow showing automated distribution across locations"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -199,11 +199,11 @@ const MultiBranchGroups = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Role-Based Access & Reporting</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-role-based-access-reporting.webp"
+              alt="Role-based access and reporting dashboard showing tiered permissions for dealership group management"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">

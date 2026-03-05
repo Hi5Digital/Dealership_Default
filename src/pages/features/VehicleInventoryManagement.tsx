@@ -50,11 +50,11 @@ const VehicleInventoryManagement = () => {
             </div>
             
             <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Inventory Dashboard</span>
-                </div>
-              </div>
+              <img
+                src="/dealership-inventory-dashboard.webp"
+                alt="Dealership vehicle inventory management dashboard showing real-time stock tracking"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -94,11 +94,11 @@ const VehicleInventoryManagement = () => {
           </div>
 
           <div className="problem-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Spreadsheets vs Software</span>
-              </div>
-            </div>
+            <img
+              src="/manual-stock-spreadsheets-vs-software.webp"
+              alt="Comparison of manual spreadsheet stock management versus modern dealership software"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -112,11 +112,11 @@ const VehicleInventoryManagement = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">VMG Sync Workflow</span>
-              </div>
-            </div>
+            <img
+              src="/vmg-inventory-sync-workflow.webp"
+              alt="VMG inventory sync workflow showing automated data synchronization"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">
@@ -180,11 +180,11 @@ const VehicleInventoryManagement = () => {
           </div>
 
           <div className="feature-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Multi-Showroom Stock View</span>
-              </div>
-            </div>
+            <img
+              src="/multi-showroom-dealership-stock-view.webp"
+              alt="Multi-showroom dealership stock view with cross-branch inventory visibility"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>

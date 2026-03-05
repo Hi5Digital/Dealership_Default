@@ -46,9 +46,11 @@ const DealershipDashboard = () => {
               By the Car Leads Dealership Success Team
             </p>
             
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center mt-8">
-              <span className="text-muted-foreground text-center px-4">Dealership Dashboard Hero Image</span>
-            </div>
+            <img
+              src="/blog-hero-dealership-sales-dashboard.webp"
+              alt="Modern dealership sales dashboard showing KPIs, lead source ROI, and performance metrics"
+              className="w-full aspect-video object-cover rounded-xl mt-8"
+            />
           </div>
         </div>
       </header>
@@ -76,9 +78,11 @@ const DealershipDashboard = () => {
               You spend heavily on Cars.co.za, AutoTrader, social media ads, and your own website. But which channel is actually selling cars? Your dashboard must show you performance & ROI reporting broken down by lead source. Tracking how many inquiries come from each platform is not enough; you must track how many of those specific leads convert into test drives and closed deals. This allows you to cut wasteful marketing spend and double down on the portals that actually generate gross profit.
             </p>
 
-            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center my-12">
-              <span className="text-muted-foreground text-center px-4">Lead Source ROI Tracking</span>
-            </div>
+            <img
+              src="/blog-inline-dealership-lead-source-roi.webp"
+              alt="Chart showing dealership lead source ROI analysis comparing different marketing channels"
+              className="w-full aspect-video object-cover rounded-xl my-12"
+            />
 
             <h2 className="text-3xl font-bold mt-12 mb-6">2. Speed to Lead (Team Efficiency)</h2>
             

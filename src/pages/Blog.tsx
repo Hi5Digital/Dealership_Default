@@ -14,7 +14,7 @@ const Blog = () => {
       category: "Lead Management",
       slug: "/blog/stop-losing-leads-autotrader-cars-co-za",
       featured: true,
-      image: "/images/placeholders/blog-thumb-stop-losing-leads.jpg"
+      image: "/blog-thumb-stop-losing-leads.webp"
     },
     {
       title: "WhatsApp strategies to increase test drive bookings",
@@ -73,9 +73,11 @@ const Blog = () => {
                   }`}
                 >
                   {post.featured && post.image && (
-                    <div className="aspect-video bg-muted flex items-center justify-center">
-                      <span className="text-muted-foreground">Featured Article Image</span>
-                    </div>
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full aspect-video object-cover"
+                    />
                   )}
                   
                   <div className="p-6">

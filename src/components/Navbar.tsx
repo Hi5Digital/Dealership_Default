@@ -17,7 +17,7 @@ const navLinks: NavItem[] = [
     children: [
       { label: "Platform", href: "#platform", isScroll: true },
       { label: "Benefits", href: "#benefits", isScroll: true },
-      { label: "Pricing", href: "#pricing", isScroll: true },
+      { label: "Features", href: "#pricing", isScroll: true },
       { label: "Contact", href: "#contact", isScroll: true },
     ]
   },

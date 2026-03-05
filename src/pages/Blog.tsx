@@ -20,13 +20,15 @@ const Blog = () => {
       title: "WhatsApp strategies to increase test drive bookings",
       excerpt: "Discover how automated reminders and personalized multi-channel messaging can drastically reduce your dealership's no-show rate.",
       category: "Sales Automation",
-      slug: "/blog/whatsapp-strategies-increase-test-drive-bookings"
+      slug: "/blog/whatsapp-strategies-increase-test-drive-bookings",
+      image: "/blog-hero-dealership-whatsapp-strategies.webp"
     },
     {
       title: "What to track in your dealership sales dashboard (South Africa)",
       excerpt: "Are you tracking the right metrics? Find out which KPIs actually drive gross profit and team efficiency on your showroom floor.",
       category: "Dealership Analytics",
-      slug: "/blog/what-to-track-dealership-sales-dashboard-south-africa"
+      slug: "/blog/what-to-track-dealership-sales-dashboard-south-africa",
+      image: "/blog-hero-dealership-sales-dashboard.webp"
     }
   ];
 
@@ -72,7 +74,7 @@ const Blog = () => {
                     post.featured ? 'md:col-span-2 lg:col-span-3' : ''
                   }`}
                 >
-                  {post.featured && post.image && (
+                  {post.image && (
                     <img
                       src={post.image}
                       alt={post.title}

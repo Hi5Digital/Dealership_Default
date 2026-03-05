@@ -23,7 +23,7 @@ const Pricing = () => {
   const pricingTiers = [
     {
       name: "Bronze",
-      icon: "/pricing-bronze-icon.webp",
+      icon: "/pricing-bronze-icon2.webp",
       price: "R4,500",
       period: "per month",
       audience: "Perfect for single-branch dealerships focusing on core lead management.",
@@ -42,7 +42,7 @@ const Pricing = () => {
     },
     {
       name: "Silver",
-      icon: "/pricing-silver-icon.webp",
+      icon: "/pricing-silver-icon2.webp",
       price: "R8,500",
       period: "per month",
       audience: "Ideal for growing multi-branch dealers needing financial integrations and digital contracts.",
@@ -64,7 +64,7 @@ const Pricing = () => {
     },
     {
       name: "Gold",
-      icon: "/pricing-gold-icon.webp",
+      icon: "/pricing-gold-icon2.webp",
       price: "R12,500",
       period: "per month",
       audience: "The ultimate enterprise solution for large franchise networks requiring maximum security and automation.",
@@ -107,7 +107,7 @@ const Pricing = () => {
       description="Transparent, scalable pricing for South African motor dealerships. Choose from Bronze, Silver, or Gold CRM tiers to capture leads, track stock, and close deals."
     >
       {/* Hero Section */}
-      <section id="pricing-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-24">
+      <section id="pricing-hero" className="pt-32 pb-20 lg:pt-30 lg:pb-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div 
             ref={hero}
@@ -115,7 +115,7 @@ const Pricing = () => {
               heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
               Simple, Scalable Pricing for Dealerships of All Sizes
             </h1>
             
@@ -138,7 +138,7 @@ const Pricing = () => {
             {pricingTiers.map((tier, idx) => (
               <div 
                 key={idx}
-                className={`relative bg-card border-2 ${tier.popular ? 'border-primary' : 'border-border'} rounded-lg p-8 flex flex-col`}
+                className={`relative bg-card border-2 ${tier.popular ? 'border-primary' : 'border-border'} rounded-lg p-4 flex flex-col`}
               >
                 {tier.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-lg text-sm font-semibold">
@@ -146,7 +146,7 @@ const Pricing = () => {
                   </div>
                 )}
                 
-                <div className="w-24 h-24 mb-4">
+                <div className="relative w-80 h-54 mb-4 mx-auto mb-0">
                   <img
                     src={tier.icon}
                     alt={`${tier.name} tier icon`}

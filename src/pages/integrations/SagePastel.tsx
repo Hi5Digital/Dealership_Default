@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SagePastel = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: sync, isVisible: syncVisible } = useScrollReveal();
   const { ref: alignment, isVisible: alignmentVisible } = useScrollReveal();
@@ -26,39 +26,13 @@ const SagePastel = () => {
       title="Dealership Sage Pastel Accounting Integration | Car Leads"
       description="Stop double-capturing sales data. Car Leads offers seamless Sage Pastel accounting integration to reduce manual recon and errors for South African dealerships."
     >
-      {/* Hero Section */}
-      <section id="integration-hero-accounting" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Streamline Dealership Finances with Sage Pastel Integration
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Stop manually recapturing deal information. Car Leads offers Sage Pastel accounting integration to reduce manual recon and errors. Connect your dealership's sales pipeline directly to your financial back-office.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Sage Pastel Integration</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/sage-pastel-dealership-integration.webp"
+        imageAlt="Sage Pastel dealership accounting integration showing seamless data sync"
+        title="Streamline Dealership Finances with Sage Pastel Integration"
+        description="Stop manually recapturing deal information. Car Leads offers Sage Pastel accounting integration to reduce manual recon and errors. Connect your dealership's sales pipeline directly to your financial back-office."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Integration Challenges */}
       <ContentSection className="bg-muted/30">
@@ -94,11 +68,11 @@ const SagePastel = () => {
           </div>
 
           <div className="problem-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Manual Recon Headache</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-manual-recon-headache.webp"
+              alt="Frustrated dealership F&I manager struggling with manual reconciliation and spreadsheets"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -112,11 +86,11 @@ const SagePastel = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Sage Pastel Sync Success</span>
-              </div>
-            </div>
+            <img
+              src="/car-leads-sage-pastel-sync-success.webp"
+              alt="Car Leads and Sage Pastel successful sync notification showing automated workflow"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">
@@ -180,11 +154,11 @@ const SagePastel = () => {
           </div>
 
           <div className="feature-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Gross Profit Alignment</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-gross-profit-accounting-match.webp"
+              alt="Split screen showing dealership gross profit matching between CRM and accounting system"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>

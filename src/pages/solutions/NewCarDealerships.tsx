@@ -1,12 +1,12 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 
 const NewCarDealerships = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: routing, isVisible: routingVisible } = useScrollReveal();
   const { ref: finance, isVisible: financeVisible } = useScrollReveal();
@@ -27,39 +27,13 @@ const NewCarDealerships = () => {
       title="CRM & Dealer Management System for New Car Dealerships | Car Leads"
       description="Scale your franchise operations. Car Leads provides new car dealerships in South Africa with advanced lead routing, finance integration, and multi-branch management."
     >
-      {/* Hero Section */}
-      <section id="new-car-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                The Ultimate CRM for Franchise and New Car Dealerships
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Drive growth, improve operational control, and gain performance insights with the all-in-one CRM and dealership management platform. Built for the demands of modern South African franchise dealerships, Car Leads helps you manage high lead volumes, track finance approvals, and oversee multi-branch networks.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-full px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <img
-                src="/new-car-franchise-dealership-software.webp"
-                alt="New car franchise dealership CRM software dashboard with advanced lead routing and analytics"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/new-car-franchise-dealership-software.webp"
+        imageAlt="New car franchise dealership CRM software dashboard with advanced lead routing and analytics"
+        title="The Ultimate CRM for Franchise and New Car Dealerships"
+        description="Drive growth, improve operational control, and gain performance insights with the all-in-one CRM and dealership management platform. Built for the demands of modern South African franchise dealerships, Car Leads helps you manage high lead volumes, track finance approvals, and oversee multi-branch networks."
+        onButtonClick={scrollToContact}
+      />
 
       {/* New Car Challenges */}
       <ContentSection className="bg-muted/30">

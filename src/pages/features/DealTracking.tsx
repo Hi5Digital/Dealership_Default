@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const DealTracking = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: tracking, isVisible: trackingVisible } = useScrollReveal();
   const { ref: dashboards, isVisible: dashboardsVisible } = useScrollReveal();
@@ -26,39 +26,13 @@ const DealTracking = () => {
       title="Dealership Sales Tracking & Gross Profit Reporting | Car Leads"
       description="Gain a clear view of your sales funnel. Car Leads provides South African dealerships with real-time sales dashboards, deal tracking, and gross profit reporting."
     >
-      {/* Hero Section */}
-      <section id="reporting-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Track Performance, ROI, and Gross Profit in Real-Time
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Gain a clear view of your sales funnel. Generate detailed reports on lead conversion, team efficiency, and inventory performance to make data-backed decisions that grow your bottom line.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Sales Dashboard</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/dealership-sales-dashboard-gross-profi.webp"
+        imageAlt="Dealership sales dashboard showing real-time gross profit tracking and performance metrics"
+        title="Track Performance, ROI, and Gross Profit in Real-Time"
+        description="Gain a clear view of your sales funnel. Generate detailed reports on lead conversion, team efficiency, and inventory performance to make data-backed decisions that grow your bottom line."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Reporting Challenges */}
       <ContentSection className="bg-muted/30">
@@ -94,11 +68,11 @@ const DealTracking = () => {
           </div>
 
           <div className="problem-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Manual Reporting Struggles</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-manual-reporting-struggles.webp"
+              alt="Manual dealership reporting challenges with spreadsheets and outdated processes"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -112,11 +86,11 @@ const DealTracking = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Sales Pipeline Tracking</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-sales-pipeline-tracking.webp"
+              alt="Dealership sales pipeline tracking interface showing deal progression and stages"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">
@@ -180,11 +154,11 @@ const DealTracking = () => {
           </div>
 
           <div className="feature-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Manager Reporting Dashboard</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-manager-reporting-tablet.webp"
+              alt="Dealership manager viewing real-time reporting dashboard on tablet"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>

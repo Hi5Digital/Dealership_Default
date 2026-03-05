@@ -1,12 +1,12 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 
 const UsedCarDealerships = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: leadCapture, isVisible: leadCaptureVisible } = useScrollReveal();
   const { ref: stockSync, isVisible: stockSyncVisible } = useScrollReveal();
@@ -27,39 +27,13 @@ const UsedCarDealerships = () => {
       title="Dealer Management System for Used Car Dealerships | Car Leads"
       description="Sell more used cars in South Africa. Car Leads helps independent dealerships capture portal leads, sync VMG stock, and automate WhatsApp follow-ups with no long-term contracts."
     >
-      {/* Hero Section */}
-      <section id="used-car-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                The Smarter CRM Built for Independent Used Car Dealerships
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Move metal faster and take control of your showroom floor. Car Leads is designed specifically to supercharge lead capture and sales performance for dealers, giving independent used car dealerships a unified system to manage inquiries, sync stock, and close more deals.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-full px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <img
-                src="/independent-used-car-dealership-software.webp"
-                alt="Independent used car dealership CRM software dashboard showing lead management and stock sync"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/independent-used-car-dealership-software.webp"
+        imageAlt="Independent used car dealership CRM software dashboard showing lead management and stock sync"
+        title="The Smarter CRM Built for Independent Used Car Dealerships"
+        description="Move metal faster and take control of your showroom floor. Car Leads is designed specifically to supercharge lead capture and sales performance for dealers, giving independent used car dealerships a unified system to manage inquiries, sync stock, and close more deals."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Used Car Challenges */}
       <ContentSection className="bg-muted/30">

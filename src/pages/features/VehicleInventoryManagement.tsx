@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const VehicleInventoryManagement = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: vmgSync, isVisible: vmgSyncVisible } = useScrollReveal();
   const { ref: multiShowroom, isVisible: multiShowroomVisible } = useScrollReveal();
@@ -26,39 +26,13 @@ const VehicleInventoryManagement = () => {
       title="Dealership Vehicle Inventory Management & Stock Sync | Car Leads"
       description="Seamlessly manage vehicle stock across multiple showrooms. Car Leads automatically syncs with VMG, tracks ageing inventory, and matches vehicles to buyer leads."
     >
-      {/* Hero Section */}
-      <section id="inventory-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Seamless Vehicle Inventory Management for Dealerships
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Take full control of your showroom floor. Sync stock units automatically from VMG, match vehicles with incoming buyer leads. Filter and locate specific stock with ease — spending less time hunting and more time selling.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-lg px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <img
-                src="/dealership-inventory-dashboard.webp"
-                alt="Dealership vehicle inventory management dashboard showing real-time stock tracking"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/dealership-inventory-dashboard.webp"
+        imageAlt="Dealership vehicle inventory management dashboard showing real-time stock tracking"
+        title="Seamless Vehicle Inventory Management for Dealerships"
+        description="Take full control of your showroom floor. Sync stock units automatically from VMG, match vehicles with incoming buyer leads. Filter and locate specific stock with ease — spending less time hunting and more time selling."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Stock Challenges */}
       <ContentSection className="bg-muted/30">

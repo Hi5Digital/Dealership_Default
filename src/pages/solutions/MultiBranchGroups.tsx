@@ -1,12 +1,12 @@
 import PageLayout from "@/components/PageLayout";
 import ContentSection from "@/components/ContentSection";
 import DemoFormSection from "@/components/DemoFormSection";
+import FeatureHeroSection from "@/components/FeatureHeroSection";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollAnimation";
 import { CheckCircle2 } from "lucide-react";
 
 const MultiBranchGroups = () => {
-  const { ref: hero, isVisible: heroVisible } = useScrollReveal();
   const { ref: challenges, isVisible: challengesVisible } = useScrollReveal();
   const { ref: stockManagement, isVisible: stockManagementVisible } = useScrollReveal();
   const { ref: leadRouting, isVisible: leadRoutingVisible } = useScrollReveal();
@@ -27,39 +27,13 @@ const MultiBranchGroups = () => {
       title="Dealer Management System for Multi-Branch Dealership Groups | Car Leads"
       description="Unify your dealership group. Car Leads provides South African multi-branch motor dealerships with central vehicle stock systems, role-based access, and group-wide analytics."
     >
-      {/* Hero Section */}
-      <section id="multi-branch-group-hero" className="pt-32 pb-20 lg:pt-40 lg:pb-32">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div 
-            ref={hero}
-            className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-700 ${
-              heroVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="hero-content">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-                Unify and Scale Your Dealership Group Operations
-              </h1>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Drive growth, improve operational control, and gain performance insights with the all-in-one CRM and dealership management platform. Built to handle the complexity of multi-branch networks, Car Leads connects your online leads, showroom activity, vehicle stock, and sales performance into one system.
-              </p>
-              
-              <Button size="lg" onClick={scrollToContact} className="rounded-full px-8">
-                Book a 30-min demo
-              </Button>
-            </div>
-            
-            <div className="hero-image-wrapper">
-              <img
-                src="/multi-branch-dealership-group-dashboard.webp"
-                alt="Multi-branch dealership group dashboard showing centralized operations and analytics across locations"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <FeatureHeroSection
+        imageSrc="/multi-branch-dealership-group-dashboard.webp"
+        imageAlt="Multi-branch dealership group dashboard showing centralized operations and analytics across locations"
+        title="Unify and Scale Your Dealership Group Operations"
+        description="Drive growth, improve operational control, and gain performance insights with the all-in-one CRM and dealership management platform. Built to handle the complexity of multi-branch networks, Car Leads connects your online leads, showroom activity, vehicle stock, and sales performance into one system."
+        onButtonClick={scrollToContact}
+      />
 
       {/* Multi-Branch Challenges */}
       <ContentSection className="bg-muted/30">

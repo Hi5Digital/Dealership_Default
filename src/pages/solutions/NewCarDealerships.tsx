@@ -51,11 +51,11 @@ const NewCarDealerships = () => {
             </div>
             
             <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Franchise Dealership Software</span>
-                </div>
-              </div>
+              <img
+                src="/new-car-franchise-dealership-software.webp"
+                alt="New car franchise dealership CRM software dashboard with advanced lead routing and analytics"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -99,11 +99,11 @@ const NewCarDealerships = () => {
           </div>
 
           <div className="problem-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Pipeline Bottlenecks</span>
-              </div>
-            </div>
+            <img
+              src="/new-car-dealership-sales-pipeline-bottlenecks.webp"
+              alt="New car dealership sales pipeline bottlenecks with scattered leads and delayed approvals"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -117,11 +117,11 @@ const NewCarDealerships = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Automated Lead Routing</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-automated-lead-routing.webp"
+              alt="Dealership automated lead routing system assigning inquiries to sales team members"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">
@@ -185,11 +185,11 @@ const NewCarDealerships = () => {
           </div>
 
           <div className="feature-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Finance Pre-Approval</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-finance-pre-approval-integration.webp"
+              alt="Dealership finance pre-approval integration dashboard tracking application status"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -203,11 +203,11 @@ const NewCarDealerships = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Role-Based Access</span>
-              </div>
-            </div>
+            <img
+              src="/dealership-role-based-access-management.webp"
+              alt="Dealership role-based access management showing principal view with multi-branch analytics"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">

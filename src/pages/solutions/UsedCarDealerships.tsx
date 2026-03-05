@@ -51,11 +51,11 @@ const UsedCarDealerships = () => {
             </div>
             
             <div className="hero-image-wrapper">
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-muted-foreground text-center px-4">Used Car Dealership Software</span>
-                </div>
-              </div>
+              <img
+                src="/independent-used-car-dealership-software.webp"
+                alt="Independent used car dealership CRM software dashboard showing lead management and stock sync"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -99,11 +99,11 @@ const UsedCarDealerships = () => {
           </div>
 
           <div className="problem-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Sales Chaos vs CRM</span>
-              </div>
-            </div>
+            <img
+              src="/used-car-sales-chaos-vs-crm.webp"
+              alt="Frustrated dealership manager with scattered leads and manual processes vs organized CRM system"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -117,11 +117,11 @@ const UsedCarDealerships = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">Central Lead Board</span>
-              </div>
-            </div>
+            <img
+              src="/used-car-dealership-central-lead-board.webp"
+              alt="Used car dealership central lead board capturing AutoTrader and Cars.co.za inquiries"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">
@@ -185,11 +185,11 @@ const UsedCarDealerships = () => {
           </div>
 
           <div className="feature-image-wrapper">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">VMG Stock Sync</span>
-              </div>
-            </div>
+            <img
+              src="/vmg-used-car-stock-sync-software.webp"
+              alt="VMG stock sync software dashboard showing automated vehicle inventory management"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </ContentSection>
@@ -203,11 +203,11 @@ const UsedCarDealerships = () => {
           }`}
         >
           <div className="feature-image-wrapper order-2 lg:order-1">
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 border border-border">
-              <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
-                <span className="text-muted-foreground text-center px-4">WhatsApp Reminders</span>
-              </div>
-            </div>
+            <img
+              src="/used-car-dealership-whatsapp-reminders.webp"
+              alt="WhatsApp automated test drive reminders and customer engagement on mobile device"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
 
           <div className="feature-content order-1 lg:order-2">

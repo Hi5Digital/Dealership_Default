@@ -1,0 +1,47 @@
+# This file specifies files that are ignored when deploying to App Engine
+# Note: dist/ and src/ are NOT ignored - GCP needs src/ to build, dist/ for serving
+
+# Dependencies (rebuilt on App Engine)
+node_modules/
+
+# Development files
+*.md
+*.log
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Environment files (secrets are injected via workflow)
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# TypeScript source maps (optional, can remove if you want them)
+# *.map
+
+# Build tools config - NOT ignored, needed for GCP build
+# vite.config.ts - NEEDED
+# tsconfig*.json - NEEDED
+# postcss.config.js - NEEDED
+# tailwind.config.ts - NEEDED
+eslint.config.js
+components.json
+
+# GitHub workflows
+.github/
+
+# Public folder is needed for GCP build (Vite copies it to dist/)
+# public/ - DO NOT IGNORE
+
+# Screenshots from testing (but keep assets)
+*.png
+!dist/**/*.png
+!src/assets/**/*.png

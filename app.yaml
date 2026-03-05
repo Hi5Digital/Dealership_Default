@@ -1,0 +1,22 @@
+runtime: nodejs20
+
+service: default
+
+instance_class: F1
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 2
+
+entrypoint: npm start
+
+env_variables:
+  SMTP_HOST: "smtp.carleads.co.za"
+  SMTP_PORT: "465"
+  CONTACT_EMAIL: "shaun@hi5digital.co.za"
+
+# All requests handled by Node.js server (which serves static files from dist/)
+handlers:
+  - url: /.*
+    script: auto
+    secure: always

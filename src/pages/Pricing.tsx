@@ -200,7 +200,7 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Contract Terms */}
+      {/* Contract Terms*/}
       <ContentSection className="bg-muted/30">
         <div 
           ref={terms}

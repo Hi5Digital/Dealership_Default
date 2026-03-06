@@ -24,7 +24,7 @@ const Pricing = () => {
     {
       name: "Bronze",
       icon: "/pricing-bronze-icon2.webp",
-      price: "R4,500",
+      price: "R3,500",
       period: "per month",
       audience: "Perfect for single-branch dealerships focusing on core lead management.",
       features: [
@@ -43,7 +43,7 @@ const Pricing = () => {
     {
       name: "Silver",
       icon: "/pricing-silver-icon2.webp",
-      price: "R8,500",
+      price: "R5,500",
       period: "per month",
       audience: "Ideal for growing multi-branch dealers needing financial integrations and digital contracts.",
       popular: true,
@@ -65,7 +65,7 @@ const Pricing = () => {
     {
       name: "Gold",
       icon: "/pricing-gold-icon2.webp",
-      price: "R12,500",
+      price: "R8,500",
       period: "per month",
       audience: "The ultimate enterprise solution for large franchise networks requiring maximum security and automation.",
       features: [

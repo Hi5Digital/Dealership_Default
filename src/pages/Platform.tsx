@@ -134,7 +134,7 @@ const Platform = () => {
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span><strong>WhatsApp, SMS and email communication</strong> built for dealership workflows.</span>
+                <span><strong>WhatsApp and email communication</strong> built for dealership workflows.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />

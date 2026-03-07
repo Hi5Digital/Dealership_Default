@@ -71,7 +71,7 @@ const CommunicationSection = () => {
                   <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center">
                     <Phone className="w-4 h-4 text-orange-600" />
                   </div>
-                  <div className="text-xs font-bold">SMS Reminder</div>
+                  <div className="text-xs font-bold">WhatAapp Reminder</div>
                   <div className="text-[10px] text-muted-foreground ml-auto">10:30</div>
                 </div>
                 <p className="text-sm text-muted-foreground">Reminder: Test drive scheduled for tomorrow at 14:00. See you at the showroom!</p>

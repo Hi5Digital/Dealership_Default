@@ -194,7 +194,7 @@ const LeadManagementCRM = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Consistent communication builds trust. Keep your customers engaged with automated SMS and email notifications for appointments and status follow-ups.
+              Consistent communication builds trust. Keep your customers engaged with automated WhatsApp and email notifications for appointments and status follow-ups.
             </p>
             
             <ul className="space-y-3">

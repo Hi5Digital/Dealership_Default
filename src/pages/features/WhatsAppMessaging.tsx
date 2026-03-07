@@ -39,14 +39,14 @@ const WhatsAppMessaging = () => {
 
   return (
     <PageLayout
-      title="Dealership WhatsApp & SMS Messaging Integration | Car Leads"
-      description="Enhance customer communication and reduce no-shows. Car Leads offers automated WhatsApp notifications, SMS, and email follow-ups built for South African dealership workflows."
+      title="Dealership WhatsApp & Email Messaging Integration | Car Leads"
+      description="Enhance customer communication and reduce no-shows. Car Leads offers automated WhatsApp notifications, and email follow-ups built for South African dealership workflows."
     >
       <FeatureHeroSection
         imageSrc="/dealership-whatsapp-messaging-mobile.webp"
         imageAlt="WhatsApp messaging on mobile for dealership customer communication"
         title="Enhance Customer Communication with Multi-Channel Messaging"
-        description="Keep your customers engaged with automated SMS and email notifications for appointments and status follow-ups. Use multiple channels to ensure your messages always hit home."
+        description="Keep your customers engaged with automated WhatsApp and email notifications for appointments and status follow-ups. Use multiple channels to ensure your messages always hit home."
         onButtonClick={scrollToContact}
       />
 
@@ -119,7 +119,7 @@ const WhatsAppMessaging = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Set up smart rules to automate <Link to="/features/lead-management-crm" className="text-primary hover:underline">lead routing</Link>, text & email follow-ups, and test-drive assignments. Car Leads provides WhatsApp, SMS and email communication built for dealership workflows.
+              Set up smart rules to automate <Link to="/features/lead-management-crm" className="text-primary hover:underline">lead routing</Link>, text & email follow-ups, and test-drive assignments. Car Leads provides WhatsApp and email communication built for dealership workflows.
             </p>
             
             <ul className="space-y-3">
@@ -180,7 +180,7 @@ const WhatsAppMessaging = () => {
               <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg p-0 border border-border">
                 <img 
                   src="/dealership-sms-whatsapp-example.webp" 
-                  alt="WhatsApp and SMS message examples for dealership customer engagement"
+                  alt="WhatsApp and email message examples for dealership customer engagement"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>

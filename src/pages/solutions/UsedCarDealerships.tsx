@@ -190,7 +190,7 @@ const UsedCarDealerships = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Keep your prospects engaged from the moment they inquire until they drive off the lot. Car Leads provides WhatsApp, SMS and email communication built for dealership workflows.
+              Keep your prospects engaged from the moment they inquire until they drive off the lot. Car Leads provides WhatsApp and email communication built for dealership workflows.
             </p>
             
             <ul className="space-y-3">

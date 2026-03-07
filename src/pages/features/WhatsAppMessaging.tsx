@@ -45,7 +45,7 @@ const WhatsAppMessaging = () => {
       <FeatureHeroSection
         imageSrc="/dealership-whatsapp-messaging-mobile.webp"
         imageAlt="WhatsApp messaging on mobile for dealership customer communication"
-        title="Enhance Customer Communication with Multi-Channel Messaging"
+        title="Enhance Customer Communication with Whatsapp & Email communications"
         description="Keep your customers engaged with automated WhatsApp and email notifications for appointments and status follow-ups. Use multiple channels to ensure your messages always hit home."
         onButtonClick={scrollToContact}
       />

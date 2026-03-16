@@ -18,6 +18,8 @@ import WhatsAppMessaging from "./pages/features/WhatsAppMessaging";
 import DealTracking from "./pages/features/DealTracking";
 import SalesAnalytics from "./pages/features/SalesAnalytics";
 import MultiBranchManagement from "./pages/features/MultiBranchManagement";
+import AutomotiveLeadManagement from "./pages/features/AutomotiveLeadManagement";
+import AutomotiveDealershipKPI from "./pages/features/AutomotiveDealershipKPI";
 
 // Integrations
 import CarsCoZa from "./pages/integrations/CarsCoZa";
@@ -59,6 +61,8 @@ const App = () => (
           <Route path="/features/deal-tracking-gross-profit" element={<DealTracking />} />
           <Route path="/features/dealership-sales-analytics-south-africa" element={<SalesAnalytics />} />
           <Route path="/features/multi-branch-dealership-management" element={<MultiBranchManagement />} />
+          <Route path="/features/automotive-lead-management-system" element={<AutomotiveLeadManagement />} />
+          <Route path="/features/automotive-dealership-kpi-system-with-reporting" element={<AutomotiveDealershipKPI />} />
           
           {/* Integrations */}
           <Route path="/integrations/cars-co-za" element={<CarsCoZa />} />

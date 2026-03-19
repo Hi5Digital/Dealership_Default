@@ -9,7 +9,10 @@ const OPTIMIZED_DIR = './public';
 // Image optimization settings
 const HERO_MAX_WIDTH = 1920;      // Hero images (16:9)
 const CONTENT_MAX_WIDTH = 1200;   // Content block images
+const LOGO_MAX_WIDTH = 270;       // Logo (2x for retina)
 const QUALITY = 85;                // WebP quality (85 is excellent balance)
+const LOGO_QUALITY = 90;           // Higher quality for logos to preserve sharpness
+const HERO_QUALITY = 80;           // Slightly lower for hero images (large files)
 
 // Define which images are hero images (full width)
 const HERO_IMAGES = [
@@ -24,7 +27,7 @@ const HERO_IMAGES = [
   'xero-sage-pastel-dealership-integration.png'
 ];
 
-async function optimizeImage(inputPath, outputPath, maxWidth) {
+async function optimizeImage(inputPath, outputPath, maxWidth, quality) {
   try {
     const image = sharp(inputPath);
     const metadata = await image.metadata();
@@ -38,9 +41,9 @@ async function optimizeImage(inputPath, outputPath, maxWidth) {
       });
     }
     
-    // Convert to WebP
+    // Convert to WebP with appropriate quality
     await pipeline
-      .webp({ quality: QUALITY })
+      .webp({ quality: quality, effort: 6 }) // effort: 6 for better compression
       .toFile(outputPath);
     
     console.log(`✅ Optimized: ${basename(inputPath)} -> ${basename(outputPath)}`);
@@ -70,10 +73,20 @@ async function processImages() {
     const nameWithoutExt = basename(file, extname(file));
     const outputPath = join(OPTIMIZED_DIR, `${nameWithoutExt}.webp`);
     
-    // Determine max width based on image type
-    const maxWidth = HERO_IMAGES.includes(file) ? HERO_MAX_WIDTH : CONTENT_MAX_WIDTH;
+    // Determine max width and quality based on image type
+    let maxWidth, quality;
+    if (file.includes('logo')) {
+      maxWidth = LOGO_MAX_WIDTH;
+      quality = LOGO_QUALITY;
+    } else if (HERO_IMAGES.includes(file)) {
+      maxWidth = HERO_MAX_WIDTH;
+      quality = HERO_QUALITY;
+    } else {
+      maxWidth = CONTENT_MAX_WIDTH;
+      quality = QUALITY;
+    }
     
-    await optimizeImage(inputPath, outputPath, maxWidth);
+    await optimizeImage(inputPath, outputPath, maxWidth, quality);
   }
   
   console.log('\n✨ Image optimization complete!');

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation, Link } from "react-router-dom";
-import logo from "@/assets/carleads-logo.png";
+import logo from "@/assets/carleads-logo.webp";
 
 interface NavItem {
   label: string;

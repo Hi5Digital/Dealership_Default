@@ -71,6 +71,10 @@ const DealTracking = () => {
             <img
               src="/dealership-manual-reporting-struggles.webp"
               alt="Manual dealership reporting challenges with spreadsheets and outdated processes"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -89,6 +93,10 @@ const DealTracking = () => {
             <img
               src="/dealership-sales-pipeline-tracking.webp"
               alt="Dealership sales pipeline tracking interface showing deal progression and stages"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -157,6 +165,10 @@ const DealTracking = () => {
             <img
               src="/dealership-manager-reporting-tablet.webp"
               alt="Dealership manager viewing real-time reporting dashboard on tablet"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

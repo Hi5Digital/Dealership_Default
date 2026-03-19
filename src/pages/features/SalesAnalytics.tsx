@@ -72,6 +72,10 @@ const SalesAnalytics = () => {
               <img 
                 src="/dealership-marketing-roi-blindspots.webp" 
                 alt="Marketing ROI blind spots concept showing wasted dealership marketing spend"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -92,6 +96,10 @@ const SalesAnalytics = () => {
               <img 
                 src="/dealership-lead-source-roi-report.webp" 
                 alt="Lead source ROI report with pie chart showing cost-per-lead analytics"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -162,6 +170,10 @@ const SalesAnalytics = () => {
               <img 
                 src="/dealership-sales-team-efficiency-tracking.webp" 
                 alt="Sales team efficiency tracking leaderboard showing salesperson performance metrics"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>

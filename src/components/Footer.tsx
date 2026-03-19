@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="CarLeads logo" className="h-8 mb-4 brightness-0 invert opacity-90" />
+            <img src={logo} alt="CarLeads logo" width="120" height="32" loading="lazy" decoding="async" className="h-8 mb-4 brightness-0 invert opacity-90" />
             <p className="text-sm leading-relaxed opacity-70 max-w-xs">
               The smarter way to run your motor dealership. CarLeads streamlines every aspect of your dealership's operations.
             </p>

@@ -89,6 +89,10 @@ const VehicleInventoryManagement = () => {
             <img
               src="/vmg-inventory-sync-workflow.webp"
               alt="VMG inventory sync workflow showing automated data synchronization"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -157,6 +161,10 @@ const VehicleInventoryManagement = () => {
             <img
               src="/multi-showroom-dealership-stock-view.webp"
               alt="Multi-showroom dealership stock view with cross-branch inventory visibility"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

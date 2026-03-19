@@ -150,6 +150,10 @@ const Pricing = () => {
                   <img
                     src={tier.icon}
                     alt={`${tier.name} tier icon`}
+                    width="320"
+                    height="216"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain"
                   />
                 </div>

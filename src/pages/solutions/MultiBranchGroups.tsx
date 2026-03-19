@@ -72,6 +72,10 @@ const MultiBranchGroups = () => {
             <img
               src="/disconnected-dealership-branches-vs-unified.webp"
               alt="Comparison showing disconnected dealership branches versus unified network operations"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -90,6 +94,10 @@ const MultiBranchGroups = () => {
             <img
               src="/dealership-group-multi-showroom-stock.webp"
               alt="Multi-showroom stock management dashboard with cross-branch vehicle inventory visibility"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -158,6 +166,10 @@ const MultiBranchGroups = () => {
             <img
               src="/multi-branch-dealership-lead-routing.webp"
               alt="Multi-branch dealership lead routing workflow showing automated distribution across locations"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -176,6 +188,10 @@ const MultiBranchGroups = () => {
             <img
               src="/dealership-role-based-access-reporting.webp"
               alt="Role-based access and reporting dashboard showing tiered permissions for dealership group management"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

@@ -27,6 +27,10 @@ const FeatureHeroSection = ({
         <img 
           src={imageSrc}
           alt={imageAlt}
+          width="1920"
+          height="600"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center"
           style={{ objectPosition: 'center 40%' }}
         />

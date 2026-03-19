@@ -76,6 +76,10 @@ const UsedCarDealerships = () => {
             <img
               src="/used-car-sales-chaos-vs-crm.webp"
               alt="Frustrated dealership manager with scattered leads and manual processes vs organized CRM system"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -94,6 +98,10 @@ const UsedCarDealerships = () => {
             <img
               src="/used-car-dealership-central-lead-board.webp"
               alt="Used car dealership central lead board capturing AutoTrader and Cars.co.za inquiries"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -162,6 +170,10 @@ const UsedCarDealerships = () => {
             <img
               src="/vmg-used-car-stock-sync-software.webp"
               alt="VMG stock sync software dashboard showing automated vehicle inventory management"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -180,6 +192,10 @@ const UsedCarDealerships = () => {
             <img
               src="/used-car-dealership-whatsapp-reminders.webp"
               alt="WhatsApp automated test drive reminders and customer engagement on mobile device"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

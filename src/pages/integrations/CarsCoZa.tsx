@@ -72,6 +72,10 @@ const CarsCoZa = () => {
               <img 
                 src="/manual-lead-entry-delays.webp" 
                 alt="Manual lead entry delays causing slow response times and lost sales opportunities"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -92,6 +96,10 @@ const CarsCoZa = () => {
               <img 
                 src="/cars-co-za-lead-board-capture.webp" 
                 alt="Cars.co.za lead board showing instant lead capture into dealership CRM"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -166,6 +174,10 @@ const CarsCoZa = () => {
               <img 
                 src="/automated-dealership-lead-routing.webp" 
                 alt="Automated dealership lead routing workflow diagram showing smart assignment rules"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>

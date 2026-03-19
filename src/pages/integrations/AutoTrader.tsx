@@ -71,6 +71,10 @@ const AutoTrader = () => {
             <img
               src="/delayed-dealership-lead-response.webp"
               alt="Frustrated customer waiting for delayed response from dealership after submitting AutoTrader enquiry"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -89,6 +93,10 @@ const AutoTrader = () => {
             <img
               src="/autotrader-leads-on-dealership-board.webp"
               alt="CRM lead board showing AutoTrader leads with customer details and vehicle interest captured automatically"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -157,6 +165,10 @@ const AutoTrader = () => {
             <img
               src="/autotrader-lead-conversion-roi-report.webp"
               alt="Analytics dashboard showing AutoTrader lead conversion rates, test drive bookings, and ROI metrics for dealership"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

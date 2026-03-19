@@ -118,7 +118,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
         <a href="/" onClick={handleLogoClick}>
-          <img src={logo} alt="CarLeads logo" className="h-9" />
+          <img src={logo} alt="CarLeads logo" width="135" height="36" decoding="async" className="h-9" />
         </a>
 
         {/* Desktop */}

@@ -50,6 +50,10 @@ const StopLosingLeads = () => {
             <img
               src="/blog-hero-stop-losing-portal-leads.webp"
               alt="Dealership struggling with manual lead management from AutoTrader and Cars.co.za"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
               className="w-full aspect-video object-cover rounded-xl mt-8"
             />
           </div>
@@ -94,6 +98,10 @@ const StopLosingLeads = () => {
             <img
               src="/blog-inline-slow-lead-response.webp"
               alt="Visual showing slow dealership response times leading to lost sales opportunities"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
               className="w-full aspect-video object-cover rounded-xl my-12"
             />
 

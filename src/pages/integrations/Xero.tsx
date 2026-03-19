@@ -71,6 +71,10 @@ const Xero = () => {
             <img
               src="/dealership-manual-recon-headache.webp"
               alt="Stressed F&I manager dealing with manual reconciliation and double data entry between CRM and accounting system"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -89,6 +93,10 @@ const Xero = () => {
             <img
               src="/car-leads-xero-sync-success.webp"
               alt="Successful Xero sync confirmation showing automated deal-to-invoice workflow in dealership CRM"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -157,6 +165,10 @@ const Xero = () => {
             <img
               src="/dealership-gross-profit-accounting-match.webp"
               alt="Split screen report comparing dealership sales gross profit with accounting system financial records showing perfect alignment"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

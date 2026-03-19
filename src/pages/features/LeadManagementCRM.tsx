@@ -73,6 +73,10 @@ const LeadManagementCRM = () => {
               <img 
                 src="/dealership-pain-points.webp" 
                 alt="Dealership manager frustrated with scattered leads and manual processes"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -93,6 +97,10 @@ const LeadManagementCRM = () => {
               <img 
                 src="/unified-dealership-crm-flow.webp" 
                 alt="Unified CRM workflow showing lead capture from multiple sources into central dashboard"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -163,6 +171,10 @@ const LeadManagementCRM = () => {
               <img 
                 src="/south-african-dealership-integrations.webp" 
                 alt="South African dealership integrations - AutoTrader, Cars.co.za, Xero, and more"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -183,6 +195,10 @@ const LeadManagementCRM = () => {
               <img 
                 src="/dealership-crm-lead-board.webp" 
                 alt="Dealership CRM lead board showing automated communication and follow-up tracking"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg"
               />
             </div>

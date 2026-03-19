@@ -88,6 +88,10 @@ const WhatsAppMessaging = () => {
               <img 
                 src="/missed-dealership-appointments.webp" 
                 alt="Frustrated dealership manager dealing with missed appointments and lost sales"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -108,6 +112,10 @@ const WhatsAppMessaging = () => {
               <img 
                 src="/automate-whatsapp-notifications.webp" 
                 alt="Automated WhatsApp notification settings panel for dealership communication"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -181,6 +189,10 @@ const WhatsAppMessaging = () => {
                 <img 
                   src="/dealership-sms-whatsapp-example.webp" 
                   alt="WhatsApp and email message examples for dealership customer engagement"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>
@@ -202,6 +214,10 @@ const WhatsAppMessaging = () => {
               <img 
                 src="/track-staff-customer-interactions.webp" 
                 alt="CRM timeline tracking staff and customer interactions for dealership visibility"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>

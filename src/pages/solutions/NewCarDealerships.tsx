@@ -76,6 +76,10 @@ const NewCarDealerships = () => {
             <img
               src="/new-car-dealership-sales-pipeline-bottlenecks.webp"
               alt="New car dealership sales pipeline bottlenecks with scattered leads and delayed approvals"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -94,6 +98,10 @@ const NewCarDealerships = () => {
             <img
               src="/dealership-automated-lead-routing.webp"
               alt="Dealership automated lead routing system assigning inquiries to sales team members"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -162,6 +170,10 @@ const NewCarDealerships = () => {
             <img
               src="/dealership-finance-pre-approval-integration.webp"
               alt="Dealership finance pre-approval integration dashboard tracking application status"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -180,6 +192,10 @@ const NewCarDealerships = () => {
             <img
               src="/dealership-role-based-access-management.webp"
               alt="Dealership role-based access management showing principal view with multi-branch analytics"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

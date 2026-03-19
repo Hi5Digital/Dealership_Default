@@ -72,6 +72,10 @@ const MultiBranchManagement = () => {
               <img 
                 src="/dealership-group-silos-vs-unified.webp" 
                 alt="Dealership group silos versus unified system concept showing disconnected operations"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -92,6 +96,10 @@ const MultiBranchManagement = () => {
               <img 
                 src="/multi-showroom-stock-visibility.webp" 
                 alt="Multi-showroom stock visibility filter UI showing vehicle inventory across all locations"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -162,6 +170,10 @@ const MultiBranchManagement = () => {
               <img 
                 src="/dealership-role-based-access-control.webp" 
                 alt="Role-based access control permissions UI for dealership group management"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>

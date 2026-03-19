@@ -49,6 +49,10 @@ const DealershipDashboard = () => {
             <img
               src="/blog-hero-dealership-sales-dashboard.webp"
               alt="Modern dealership sales dashboard showing KPIs, lead source ROI, and performance metrics"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
               className="w-full aspect-video object-cover rounded-xl mt-8"
             />
           </div>
@@ -81,6 +85,10 @@ const DealershipDashboard = () => {
             <img
               src="/blog-inline-dealership-lead-source-roi.webp"
               alt="Chart showing dealership lead source ROI analysis comparing different marketing channels"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
               className="w-full aspect-video object-cover rounded-xl my-12"
             />
 

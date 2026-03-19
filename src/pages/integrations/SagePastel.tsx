@@ -71,6 +71,10 @@ const SagePastel = () => {
             <img
               src="/dealership-manual-recon-headache.webp"
               alt="Frustrated dealership F&I manager struggling with manual reconciliation and spreadsheets"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -89,6 +93,10 @@ const SagePastel = () => {
             <img
               src="/car-leads-sage-pastel-sync-success.webp"
               alt="Car Leads and Sage Pastel successful sync notification showing automated workflow"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
@@ -157,6 +165,10 @@ const SagePastel = () => {
             <img
               src="/dealership-gross-profit-accounting-match.webp"
               alt="Split screen showing dealership gross profit matching between CRM and accounting system"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

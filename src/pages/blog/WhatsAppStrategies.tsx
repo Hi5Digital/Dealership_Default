@@ -49,6 +49,10 @@ const WhatsAppStrategies = () => {
             <img
               src="/blog-hero-dealership-whatsapp-strategies.webp"
               alt="Dealership using automated WhatsApp messaging to engage customers and reduce no-shows"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
               className="w-full aspect-video object-cover rounded-xl mt-8"
             />
           </div>

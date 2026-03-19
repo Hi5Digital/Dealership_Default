@@ -2,9 +2,14 @@ const ImageHeroSection = () => {
   return (
     <section className="relative w-full min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-end pb-12 md:pb-16 lg:pb-2">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero1.webp')" }}
+      <img 
+        src="/hero1.webp"
+        alt="CarLeads dealership management system dashboard"
+        width="1920"
+        height="700"
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       
       {/* Content */}
